@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Car Lot Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Car Lot.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,21 @@
 			<true/>
 		</dict>
 		<key>5E7837F0143E3A5700C061C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E783850143E458900C061C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E783866143E47E400C061C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E78388F143E4B0C00C061C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

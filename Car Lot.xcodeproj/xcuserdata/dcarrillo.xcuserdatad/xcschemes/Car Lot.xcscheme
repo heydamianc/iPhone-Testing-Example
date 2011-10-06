@@ -32,8 +32,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5E7837F0143E3A5700C061C7"
-               BuildableName = "Car LotTests.octest"
-               BlueprintName = "Car LotTests"
+               BuildableName = "Car Lot Tests.octest"
+               BlueprintName = "Car Lot Tests"
                ReferencedContainer = "container:Car Lot.xcodeproj">
             </BuildableReference>
          </TestableReference>
