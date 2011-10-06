@@ -29,7 +29,32 @@
 		5E7838A4143E4B9800C061C7 /* CarLotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78389B143E4B0C00C061C7 /* CarLotTests.m */; };
 		5E7838A5143E4B9E00C061C7 /* DefaultSecurityControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7838A2143E4B3A00C061C7 /* DefaultSecurityControllerTests.m */; };
 		5E7838A6143E4BBC00C061C7 /* DefaultSecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E783832143E3CFC00C061C7 /* DefaultSecurityController.m */; };
+		5E783954143E519D00C061C7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E783951143E518B00C061C7 /* libOCMock.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E78394E143E518B00C061C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E783945143E518B00C061C7 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C907176F1421BED300C20915;
+			remoteInfo = OCMock;
+		};
+		5E783950143E518B00C061C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E783945143E518B00C061C7 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C907171F1421A05A00C20915;
+			remoteInfo = OCMockIOS;
+		};
+		5E783952143E518B00C061C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E783945143E518B00C061C7 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03BF2D3708F1C69500978C59;
+			remoteInfo = OCMockTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5E7837D6143E3A5700C061C7 /* Car Lot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Car Lot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +90,7 @@
 		5E78389B143E4B0C00C061C7 /* CarLotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarLotTests.m; sourceTree = "<group>"; };
 		5E78389D143E4B0C00C061C7 /* Car Lot Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Car Lot Tests-Prefix.pch"; sourceTree = "<group>"; };
 		5E7838A2143E4B3A00C061C7 /* DefaultSecurityControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultSecurityControllerTests.m; path = Classes/DefaultSecurityControllerTests.m; sourceTree = "<group>"; };
+		5E783945143E518B00C061C7 /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = OCMock/OCMock.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E783954143E519D00C061C7 /* libOCMock.a in Frameworks */,
 				5E783891143E4B0C00C061C7 /* SenTestingKit.framework in Frameworks */,
 				5E783892143E4B0C00C061C7 /* UIKit.framework in Frameworks */,
 				5E783893143E4B0C00C061C7 /* Foundation.framework in Frameworks */,
@@ -96,6 +123,7 @@
 			children = (
 				5E7837E0143E3A5700C061C7 /* Car Lot */,
 				5E783894143E4B0C00C061C7 /* Car Lot Tests */,
+				5E7838A7143E517300C061C7 /* Libraries */,
 				5E7837D9143E3A5700C061C7 /* Frameworks */,
 				5E7837D7143E3A5700C061C7 /* Products */,
 			);
@@ -210,6 +238,24 @@
 			name = "Logic Tests";
 			sourceTree = "<group>";
 		};
+		5E7838A7143E517300C061C7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5E783945143E518B00C061C7 /* OCMock.xcodeproj */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		5E783946143E518B00C061C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E78394F143E518B00C061C7 /* OCMock.framework */,
+				5E783951143E518B00C061C7 /* libOCMock.a */,
+				5E783953143E518B00C061C7 /* OCMockTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,6 +312,12 @@
 			mainGroup = 5E7837CB143E3A5700C061C7;
 			productRefGroup = 5E7837D7143E3A5700C061C7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5E783946143E518B00C061C7 /* Products */;
+					ProjectRef = 5E783945143E518B00C061C7 /* OCMock.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5E7837D5143E3A5700C061C7 /* Car Lot */,
@@ -273,6 +325,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5E78394F143E518B00C061C7 /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 5E78394E143E518B00C061C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E783951143E518B00C061C7 /* libOCMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOCMock.a;
+			remoteRef = 5E783950143E518B00C061C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E783953143E518B00C061C7 /* OCMockTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockTests.octest;
+			remoteRef = 5E783952143E518B00C061C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5E7837D4143E3A5700C061C7 /* Resources */ = {
@@ -468,7 +544,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Car Lot Tests/Car Lot Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = Libraries/OCMock;
 				INFOPLIST_FILE = "Car Lot Tests/Car Lot Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -483,7 +564,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Car Lot Tests/Car Lot Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = Libraries/OCMock;
 				INFOPLIST_FILE = "Car Lot Tests/Car Lot Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};

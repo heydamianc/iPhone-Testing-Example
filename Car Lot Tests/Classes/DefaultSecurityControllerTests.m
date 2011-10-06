@@ -1,4 +1,3 @@
-#import <SenTestingKit/SenTestingKit.h>
 #import "DefaultSecurityController.h"
 
 
