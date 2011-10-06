@@ -12,12 +12,23 @@
 		5E7837DF143E3A5700C061C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7837DE143E3A5700C061C7 /* CoreGraphics.framework */; };
 		5E7837E5143E3A5700C061C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7837E3143E3A5700C061C7 /* InfoPlist.strings */; };
 		5E7837E7143E3A5700C061C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7837E6143E3A5700C061C7 /* main.m */; };
-		5E7837EB143E3A5700C061C7 /* CLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7837EA143E3A5700C061C7 /* CLAppDelegate.m */; };
 		5E7837F3143E3A5700C061C7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7837F2143E3A5700C061C7 /* SenTestingKit.framework */; };
 		5E7837F4143E3A5700C061C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7837DA143E3A5700C061C7 /* UIKit.framework */; };
 		5E7837F5143E3A5700C061C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7837DC143E3A5700C061C7 /* Foundation.framework */; };
 		5E7837FD143E3A5700C061C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7837FB143E3A5700C061C7 /* InfoPlist.strings */; };
-		5E783800143E3A5700C061C7 /* Car_LotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7837FF143E3A5700C061C7 /* Car_LotTests.m */; };
+		5E783829143E3CA200C061C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E783828143E3CA200C061C7 /* AppDelegate.m */; };
+		5E78382C143E3CBB00C061C7 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78382B143E3CBB00C061C7 /* Car.m */; };
+		5E783836143E3CFC00C061C7 /* CarsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78382E143E3CFC00C061C7 /* CarsViewController.m */; };
+		5E783837143E3CFC00C061C7 /* CarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E783830143E3CFC00C061C7 /* CarViewController.m */; };
+		5E783838143E3CFC00C061C7 /* DefaultSecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E783832143E3CFC00C061C7 /* DefaultSecurityController.m */; };
+		5E783839143E3CFC00C061C7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E783834143E3CFC00C061C7 /* LoginViewController.m */; };
+		5E783842143E3D5100C061C7 /* CarsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E78383A143E3D5100C061C7 /* CarsView.xib */; };
+		5E783843143E3D5100C061C7 /* CarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E78383C143E3D5100C061C7 /* CarView.xib */; };
+		5E783844143E3D5100C061C7 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E78383E143E3D5100C061C7 /* LoginView.xib */; };
+		5E783845143E3D5100C061C7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E783840143E3D5100C061C7 /* MainWindow.xib */; };
+		5E783849143E402100C061C7 /* CarLotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E783847143E402100C061C7 /* CarLotTests.m */; };
+		5E78384A143E402100C061C7 /* DefaultSecurityControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E783848143E402100C061C7 /* DefaultSecurityControllerTests.m */; };
+		5E78384B143E404F00C061C7 /* DefaultSecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E783832143E3CFC00C061C7 /* DefaultSecurityController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +46,34 @@
 		5E7837DA143E3A5700C061C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5E7837DC143E3A5700C061C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E7837DE143E3A5700C061C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5E7837E2143E3A5700C061C7 /* Car Lot-Info.plist */ = {isa = PBXFileReference; path = "Car Lot-Info.plist"; sourceTree = "<group>"; };
+		5E7837E2143E3A5700C061C7 /* Car Lot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Car Lot-Info.plist"; sourceTree = "<group>"; };
 		5E7837E4143E3A5700C061C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E7837E6143E3A5700C061C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5E7837E8143E3A5700C061C7 /* Car Lot-Prefix.pch */ = {isa = PBXFileReference; path = "Car Lot-Prefix.pch"; sourceTree = "<group>"; };
-		5E7837E9143E3A5700C061C7 /* CLAppDelegate.h */ = {isa = PBXFileReference; path = CLAppDelegate.h; sourceTree = "<group>"; };
-		5E7837EA143E3A5700C061C7 /* CLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAppDelegate.m; sourceTree = "<group>"; };
+		5E7837E8143E3A5700C061C7 /* Car Lot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Car Lot-Prefix.pch"; sourceTree = "<group>"; };
 		5E7837F1143E3A5700C061C7 /* Car LotTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Car LotTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7837F2143E3A5700C061C7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5E7837FA143E3A5700C061C7 /* Car LotTests-Info.plist */ = {isa = PBXFileReference; path = "Car LotTests-Info.plist"; sourceTree = "<group>"; };
+		5E7837FA143E3A5700C061C7 /* Car LotTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Car LotTests-Info.plist"; sourceTree = "<group>"; };
 		5E7837FC143E3A5700C061C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5E7837FE143E3A5700C061C7 /* Car_LotTests.h */ = {isa = PBXFileReference; path = Car_LotTests.h; sourceTree = "<group>"; };
-		5E7837FF143E3A5700C061C7 /* Car_LotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car_LotTests.m; sourceTree = "<group>"; };
+		5E783827143E3CA100C061C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		5E783828143E3CA200C061C7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		5E78382A143E3CBB00C061C7 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = Classes/Car.h; sourceTree = "<group>"; };
+		5E78382B143E3CBB00C061C7 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = Classes/Car.m; sourceTree = "<group>"; };
+		5E78382D143E3CFC00C061C7 /* CarsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarsViewController.h; path = Classes/CarsViewController.h; sourceTree = "<group>"; };
+		5E78382E143E3CFC00C061C7 /* CarsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarsViewController.m; path = Classes/CarsViewController.m; sourceTree = "<group>"; };
+		5E78382F143E3CFC00C061C7 /* CarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarViewController.h; path = Classes/CarViewController.h; sourceTree = "<group>"; };
+		5E783830143E3CFC00C061C7 /* CarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarViewController.m; path = Classes/CarViewController.m; sourceTree = "<group>"; };
+		5E783831143E3CFC00C061C7 /* DefaultSecurityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefaultSecurityController.h; path = Classes/DefaultSecurityController.h; sourceTree = "<group>"; };
+		5E783832143E3CFC00C061C7 /* DefaultSecurityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultSecurityController.m; path = Classes/DefaultSecurityController.m; sourceTree = "<group>"; };
+		5E783833143E3CFC00C061C7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Classes/LoginViewController.h; sourceTree = "<group>"; };
+		5E783834143E3CFC00C061C7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Classes/LoginViewController.m; sourceTree = "<group>"; };
+		5E783835143E3CFC00C061C7 /* SecurityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityController.h; path = Classes/SecurityController.h; sourceTree = "<group>"; };
+		5E78383B143E3D5100C061C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CarsView.xib; sourceTree = "<group>"; };
+		5E78383D143E3D5100C061C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CarView.xib; sourceTree = "<group>"; };
+		5E78383F143E3D5100C061C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginView.xib; sourceTree = "<group>"; };
+		5E783841143E3D5100C061C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5E783846143E402100C061C7 /* CarLotTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarLotTests.h; path = Classes/CarLotTests.h; sourceTree = "<group>"; };
+		5E783847143E402100C061C7 /* CarLotTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarLotTests.m; path = Classes/CarLotTests.m; sourceTree = "<group>"; };
+		5E783848143E402100C061C7 /* DefaultSecurityControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultSecurityControllerTests.m; path = Classes/DefaultSecurityControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +133,11 @@
 		5E7837E0143E3A5700C061C7 /* Car Lot */ = {
 			isa = PBXGroup;
 			children = (
-				5E7837E9143E3A5700C061C7 /* CLAppDelegate.h */,
-				5E7837EA143E3A5700C061C7 /* CLAppDelegate.m */,
+				5E783827143E3CA100C061C7 /* AppDelegate.h */,
+				5E783828143E3CA200C061C7 /* AppDelegate.m */,
+				5E78380C143E3B2200C061C7 /* Model */,
+				5E78381E143E3B5400C061C7 /* View */,
+				5E783810143E3B3600C061C7 /* Controller */,
 				5E7837E1143E3A5700C061C7 /* Supporting Files */,
 			);
 			path = "Car Lot";
@@ -127,8 +157,9 @@
 		5E7837F8143E3A5700C061C7 /* Car LotTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E7837FE143E3A5700C061C7 /* Car_LotTests.h */,
-				5E7837FF143E3A5700C061C7 /* Car_LotTests.m */,
+				5E783846143E402100C061C7 /* CarLotTests.h */,
+				5E783847143E402100C061C7 /* CarLotTests.m */,
+				5E783848143E402100C061C7 /* DefaultSecurityControllerTests.m */,
 				5E7837F9143E3A5700C061C7 /* Supporting Files */,
 			);
 			path = "Car LotTests";
@@ -141,6 +172,42 @@
 				5E7837FB143E3A5700C061C7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E78380C143E3B2200C061C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E78382A143E3CBB00C061C7 /* Car.h */,
+				5E78382B143E3CBB00C061C7 /* Car.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5E783810143E3B3600C061C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E78382D143E3CFC00C061C7 /* CarsViewController.h */,
+				5E78382E143E3CFC00C061C7 /* CarsViewController.m */,
+				5E78382F143E3CFC00C061C7 /* CarViewController.h */,
+				5E783830143E3CFC00C061C7 /* CarViewController.m */,
+				5E783831143E3CFC00C061C7 /* DefaultSecurityController.h */,
+				5E783832143E3CFC00C061C7 /* DefaultSecurityController.m */,
+				5E783833143E3CFC00C061C7 /* LoginViewController.h */,
+				5E783834143E3CFC00C061C7 /* LoginViewController.m */,
+				5E783835143E3CFC00C061C7 /* SecurityController.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5E78381E143E3B5400C061C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E78383A143E3D5100C061C7 /* CarsView.xib */,
+				5E78383C143E3D5100C061C7 /* CarView.xib */,
+				5E78383E143E3D5100C061C7 /* LoginView.xib */,
+				5E783840143E3D5100C061C7 /* MainWindow.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7837E5143E3A5700C061C7 /* InfoPlist.strings in Resources */,
+				5E783842143E3D5100C061C7 /* CarsView.xib in Resources */,
+				5E783843143E3D5100C061C7 /* CarView.xib in Resources */,
+				5E783844143E3D5100C061C7 /* LoginView.xib in Resources */,
+				5E783845143E3D5100C061C7 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E7837E7143E3A5700C061C7 /* main.m in Sources */,
-				5E7837EB143E3A5700C061C7 /* CLAppDelegate.m in Sources */,
+				5E783829143E3CA200C061C7 /* AppDelegate.m in Sources */,
+				5E78382C143E3CBB00C061C7 /* Car.m in Sources */,
+				5E783836143E3CFC00C061C7 /* CarsViewController.m in Sources */,
+				5E783837143E3CFC00C061C7 /* CarViewController.m in Sources */,
+				5E783838143E3CFC00C061C7 /* DefaultSecurityController.m in Sources */,
+				5E783839143E3CFC00C061C7 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E783800143E3A5700C061C7 /* Car_LotTests.m in Sources */,
+				5E783849143E402100C061C7 /* CarLotTests.m in Sources */,
+				5E78384A143E402100C061C7 /* DefaultSecurityControllerTests.m in Sources */,
+				5E78384B143E404F00C061C7 /* DefaultSecurityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +364,38 @@
 				5E7837FC143E3A5700C061C7 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E78383A143E3D5100C061C7 /* CarsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E78383B143E3D5100C061C7 /* en */,
+			);
+			name = CarsView.xib;
+			sourceTree = "<group>";
+		};
+		5E78383C143E3D5100C061C7 /* CarView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E78383D143E3D5100C061C7 /* en */,
+			);
+			name = CarView.xib;
+			sourceTree = "<group>";
+		};
+		5E78383E143E3D5100C061C7 /* LoginView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E78383F143E3D5100C061C7 /* en */,
+			);
+			name = LoginView.xib;
+			sourceTree = "<group>";
+		};
+		5E783840143E3D5100C061C7 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E783841143E3D5100C061C7 /* en */,
+			);
+			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
