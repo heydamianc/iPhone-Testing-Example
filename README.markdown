@@ -1,5 +1,9 @@
 # Unit Tests in Xcode
 
+**Note:** This information is roughly accurate as of 2011-10-07.
+
+---
+
 When you create a new project and indicate that you would like to include unit tests, Xcode will
 add an additional target.  This target will run whenever you hold on the play button for a while,
 then select `Test` from the dropdown menu.  This is useful for development, however is limited in 
@@ -42,3 +46,14 @@ Once that is done, you can run the tests by dropping down the play button down a
 You can also invoke the tests from the command line with the following: 
 
     xcodebuild -scheme "Car Lot Tests" -sdk iphonesimulator4.3 -configuration Debug clean build
+
+## Sources
+
+* [https://github.com/acani/ocmock#readme](https://github.com/acani/ocmock#readme) - Matt Pasquale's fork of the OCMock framework (with updates for more recent versions of Xcode)
+* [http://blog.carbonfive.com/2011/04/06/running-xcode-4-unit-tests-from-the-command-line/](http://blog.carbonfive.com/2011/04/06/running-xcode-4-unit-tests-from-the-command-line/) - Jonah William's blog post on running Xcode 4 unit tests from the command line
+
+## License
+
+All content is released under the 
+[BSD license](https://github.com/damiancarrillo/iPhone-Testing-Example/blob/master/LICENSE.markdown). 
+See [this page](http://www.linfo.org/bsdlicense.html) for a plain-text description of what this means.
