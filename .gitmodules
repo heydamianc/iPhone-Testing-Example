@@ -1,3 +1,6 @@
 [submodule "Libraries/OCMock"]
 	path = Libraries/OCMock
 	url = git://github.com/acani/ocmock.git
+[submodule "Tools/OCUnit2JUnit"]
+	path = Tools/OCUnit2JUnit
+	url = https://github.com/ciryon/OCUnit2JUnit.git

@@ -51,6 +51,7 @@ You can also invoke the tests from the command line with the following:
 
 * [https://github.com/acani/ocmock#readme](https://github.com/acani/ocmock#readme) - Matt Pasquale's fork of the OCMock framework (with updates for more recent versions of Xcode)
 * [http://blog.carbonfive.com/2011/04/06/running-xcode-4-unit-tests-from-the-command-line/](http://blog.carbonfive.com/2011/04/06/running-xcode-4-unit-tests-from-the-command-line/) - Jonah William's blog post on running Xcode 4 unit tests from the command line
+* [http://blog.jayway.com/2010/01/31/continuos-integration-for-xcode-projects/](http://blog.jayway.com/2010/01/31/continuos-integration-for-xcode-projects/) - Christian Hedin's blog post on continuous testing in XCode
 
 ## License
 

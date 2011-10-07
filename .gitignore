@@ -1,2 +1,3 @@
 build
-Car\ Lot.xcodeproj/project.xcworkspace/xcuserdata
+test-reports
+*.xcuserdata/*
