@@ -1,9 +1,10 @@
 #import <UIKit/UIKit.h>
-#import "SecurityController.h"
+#import "DefaultSecurityController.h"
+
 
 @interface LoginViewController : UIViewController
 
-@property (nonatomic, retain) IBOutlet id<SecurityController> securityController;
+@property (nonatomic, retain) IBOutlet DefaultSecurityController *securityController;
 @property (nonatomic, retain) IBOutlet UITextField *usernameTextField;
 @property (nonatomic, retain) IBOutlet UITextField *passwordTextField;
 @property (nonatomic, retain) IBOutlet UIButton *logInButton;

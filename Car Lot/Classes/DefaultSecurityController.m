@@ -1,4 +1,5 @@
 #import "DefaultSecurityController.h"
+#import "Salesman.h"
 
 @implementation DefaultSecurityController
 
@@ -11,6 +12,10 @@
     authenticated &= ![password isEqualToString:@""];
     
     return authenticated;
+}
+
+- (BOOL)authorizeSalesman:(Salesman *)salesman forSystem:(NSString *)system {
+    return [salesman.credentials containsObject:system];
 }
 
 @end

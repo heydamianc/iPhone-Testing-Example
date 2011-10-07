@@ -44,4 +44,34 @@
     STAssertFalse(authenticated, nil);
 }
 
+- (void)testAuthorizeSalesmanForSystem_withCredentials {
+    id salesman = [OCMockObject mockForClass:[Salesman class]];
+    [[[salesman stub] andReturn:[NSArray arrayWithObjects:@"payroll", @"ordering", nil]] credentials];
+    
+    DefaultSecurityController *securityController = [DefaultSecurityController new];
+    BOOL authorized = [securityController authorizeSalesman:salesman forSystem:@"payroll"];
+    
+    STAssertTrue(authorized, nil);
+}
+
+- (void)testAuthorizeSalesmanForSystem_withoutCredentials {
+    id salesman = [OCMockObject niceMockForClass:[Salesman class]];
+    [[[salesman stub] andReturn:[NSArray arrayWithObjects:@"ordering", nil]] credentials];
+    
+    DefaultSecurityController *securityController = [[DefaultSecurityController alloc] init];
+    BOOL authorized = [securityController authorizeSalesman:salesman forSystem:@"payroll"];
+    
+    STAssertFalse(authorized, nil);
+    
+    [salesman verify];
+}
+
+- (void)testAuthorizeSalesmanForSystem_withNullSalesman {
+    id salesman = nil;
+    DefaultSecurityController *securityController = [[DefaultSecurityController alloc] init];
+    BOOL authorized = [securityController authorizeSalesman:salesman forSystem:@"payroll"];
+    
+    STAssertFalse(authorized, nil);
+}
+
 @end
