@@ -41,7 +41,7 @@
 
 - (void)testAuthenticateWithUsernamePassword_withEmptyPassword {
     BOOL authenticated = [self.securityController authenticateUserWithUsername:@"aUsername" password:@""];
-    STAssertTrue(authenticated, nil);
+    STAssertFalse(authenticated, nil);
 }
 
 - (void)testAuthorizeSalesmanForSystem_withCredentials {
