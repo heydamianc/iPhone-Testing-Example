@@ -600,6 +600,7 @@
 				5E783805143E3A5700C061C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E78389E143E4B0C00C061C7 /* Build configuration list for PBXNativeTarget "Car Lot Tests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +609,7 @@
 				5E7838A0143E4B0C00C061C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

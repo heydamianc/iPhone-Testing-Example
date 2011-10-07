@@ -15,7 +15,7 @@
 }
 
 - (BOOL)authorizeSalesman:(Salesman *)salesman forSystem:(NSString *)system {
-    return [salesman.credentials containsObject:system] && salesman.employeeID != nil;
+    return [salesman.credentials containsObject:system];
 }
 
 @end
