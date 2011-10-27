@@ -45,21 +45,21 @@
 }
 
 - (void)testAuthorizeSalesmanForSystem_withCredentials {
-    id salesman = [OCMockObject mockForClass:[Salesman class]];
+    id salesman = [OCMockObject mockForClass:[User class]];
     [[[salesman stub] andReturn:[NSArray arrayWithObjects:@"payroll", @"ordering", nil]] credentials];
     
     DefaultSecurityController *securityController = [DefaultSecurityController new];
-    BOOL authorized = [securityController authorizeSalesman:salesman forSystem:@"payroll"];
+    BOOL authorized = [securityController authorizeUser:salesman forSystem:@"payroll"];
     
     STAssertTrue(authorized, nil);
 }
 
 - (void)testAuthorizeSalesmanForSystem_withoutCredentials {
-    id salesman = [OCMockObject niceMockForClass:[Salesman class]];
+    id salesman = [OCMockObject niceMockForClass:[User class]];
     [[[salesman stub] andReturn:[NSArray arrayWithObjects:@"ordering", nil]] credentials];
     
     DefaultSecurityController *securityController = [[DefaultSecurityController alloc] init];
-    BOOL authorized = [securityController authorizeSalesman:salesman forSystem:@"payroll"];
+    BOOL authorized = [securityController authorizeUser:salesman forSystem:@"payroll"];
     
     STAssertFalse(authorized, nil);
     
@@ -67,9 +67,9 @@
 }
 
 - (void)testAuthorizeSalesmanForSystem_withNullSalesman {
-    id salesman = nil;
+    id user = nil;
     DefaultSecurityController *securityController = [[DefaultSecurityController alloc] init];
-    BOOL authorized = [securityController authorizeSalesman:salesman forSystem:@"payroll"];
+    BOOL authorized = [securityController authorizeUser:user forSystem:@"payroll"];
     
     STAssertFalse(authorized, nil);
 }

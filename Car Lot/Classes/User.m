@@ -1,6 +1,6 @@
-#import "Salesman.h"
+#import "User.h"
 
-@implementation Salesman
+@implementation User
 @synthesize employeeID  = _employeeID;
 @synthesize firstName   = _firstName;
 @synthesize lastName    = _lastName;

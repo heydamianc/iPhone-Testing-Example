@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E32179B1443A6C200008257 /* SecurityProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E32179A1443A6C200008257 /* SecurityProxy.m */; };
 		5E7837DB143E3A5700C061C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7837DA143E3A5700C061C7 /* UIKit.framework */; };
 		5E7837DD143E3A5700C061C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7837DC143E3A5700C061C7 /* Foundation.framework */; };
 		5E7837DF143E3A5700C061C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7837DE143E3A5700C061C7 /* CoreGraphics.framework */; };
@@ -30,8 +31,8 @@
 		5E7838A5143E4B9E00C061C7 /* DefaultSecurityControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7838A2143E4B3A00C061C7 /* DefaultSecurityControllerTests.m */; };
 		5E7838A6143E4BBC00C061C7 /* DefaultSecurityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E783832143E3CFC00C061C7 /* DefaultSecurityController.m */; };
 		5E783954143E519D00C061C7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E783951143E518B00C061C7 /* libOCMock.a */; };
-		5E78395B143E54BF00C061C7 /* Salesman.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78395A143E54BF00C061C7 /* Salesman.m */; };
-		5E78395C143E54BF00C061C7 /* Salesman.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78395A143E54BF00C061C7 /* Salesman.m */; };
+		5E78395B143E54BF00C061C7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78395A143E54BF00C061C7 /* User.m */; };
+		5E78395C143E54BF00C061C7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E78395A143E54BF00C061C7 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E3217991443A6C200008257 /* SecurityProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityProxy.h; path = Classes/SecurityProxy.h; sourceTree = "<group>"; };
+		5E32179A1443A6C200008257 /* SecurityProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityProxy.m; path = Classes/SecurityProxy.m; sourceTree = "<group>"; };
 		5E7837D6143E3A5700C061C7 /* Car Lot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Car Lot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7837DA143E3A5700C061C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5E7837DC143E3A5700C061C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,8 +95,8 @@
 		5E78389D143E4B0C00C061C7 /* Car Lot Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Car Lot Tests-Prefix.pch"; sourceTree = "<group>"; };
 		5E7838A2143E4B3A00C061C7 /* DefaultSecurityControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DefaultSecurityControllerTests.m; path = Classes/DefaultSecurityControllerTests.m; sourceTree = "<group>"; };
 		5E783945143E518B00C061C7 /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = OCMock/OCMock.xcodeproj; sourceTree = "<group>"; };
-		5E783959143E54BF00C061C7 /* Salesman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Salesman.h; path = Classes/Salesman.h; sourceTree = "<group>"; };
-		5E78395A143E54BF00C061C7 /* Salesman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Salesman.m; path = Classes/Salesman.m; sourceTree = "<group>"; };
+		5E783959143E54BF00C061C7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Classes/User.h; sourceTree = "<group>"; };
+		5E78395A143E54BF00C061C7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Classes/User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +184,8 @@
 			children = (
 				5E78382A143E3CBB00C061C7 /* Car.h */,
 				5E78382B143E3CBB00C061C7 /* Car.m */,
-				5E783959143E54BF00C061C7 /* Salesman.h */,
-				5E78395A143E54BF00C061C7 /* Salesman.m */,
+				5E783959143E54BF00C061C7 /* User.h */,
+				5E78395A143E54BF00C061C7 /* User.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,6 +201,8 @@
 				5E783832143E3CFC00C061C7 /* DefaultSecurityController.m */,
 				5E783833143E3CFC00C061C7 /* LoginViewController.h */,
 				5E783834143E3CFC00C061C7 /* LoginViewController.m */,
+				5E3217991443A6C200008257 /* SecurityProxy.h */,
+				5E32179A1443A6C200008257 /* SecurityProxy.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -405,7 +410,8 @@
 				5E783837143E3CFC00C061C7 /* CarViewController.m in Sources */,
 				5E783838143E3CFC00C061C7 /* DefaultSecurityController.m in Sources */,
 				5E783839143E3CFC00C061C7 /* LoginViewController.m in Sources */,
-				5E78395B143E54BF00C061C7 /* Salesman.m in Sources */,
+				5E78395B143E54BF00C061C7 /* User.m in Sources */,
+				5E32179B1443A6C200008257 /* SecurityProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +422,7 @@
 				5E7838A4143E4B9800C061C7 /* CarLotTests.m in Sources */,
 				5E7838A5143E4B9E00C061C7 /* DefaultSecurityControllerTests.m in Sources */,
 				5E7838A6143E4BBC00C061C7 /* DefaultSecurityController.m in Sources */,
-				5E78395C143E54BF00C061C7 /* Salesman.m in Sources */,
+				5E78395C143E54BF00C061C7 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

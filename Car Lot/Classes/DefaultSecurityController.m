@@ -1,5 +1,5 @@
 #import "DefaultSecurityController.h"
-#import "Salesman.h"
+#import "User.h"
 
 @implementation DefaultSecurityController
 
@@ -14,7 +14,7 @@
     return authenticated;
 }
 
-- (BOOL)authorizeSalesman:(Salesman *)salesman forSystem:(NSString *)system {
+- (BOOL)authorizeUser:(User *)salesman forSystem:(NSString *)system {
     return [salesman.credentials containsObject:system];
 }
 

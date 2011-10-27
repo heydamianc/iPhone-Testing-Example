@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
-#import "Salesman.h"
+#import "User.h"
 
 @interface DefaultSecurityController : NSObject
 
 - (BOOL)authenticateUserWithUsername:(NSString *)username password:(NSString *)password;
-- (BOOL)authorizeSalesman:(Salesman *)salesman forSystem:(NSString *)system;
+- (BOOL)authorizeUser:(User *)salesman forSystem:(NSString *)system;
 
 @end

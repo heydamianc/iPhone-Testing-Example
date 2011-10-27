@@ -9,19 +9,34 @@ add an additional target.  This target will run whenever you hold on the play bu
 then select `Test` from the dropdown menu.  This is useful for development, however is limited in 
 its scope because you can not build this target and run it from he command line. When you try to,
 everything will build correctly, however it behaves as if it doesn't hit the final run script 
-phase of the target (this is the script that runs the unit tests).
+phase of the target (this is the script that runs the unit tests).  The primary point of confusion 
+is in the way that SenTestingKit separates application and logic tests.  
+
+**Application tests** are tests that run from within an executing application -- akin to functional 
+tests or integration tests.  **Logic tests** are unit tests that test each component in isolation.
 
 ## Project Setup
 
-I'm not sure why the project is initially created that way, but I do know that you can fix it with 
-the following steps:  
+Initial projects are set up to run Application tests.  In order to add Logic tests so that they can
+be run on a continuous integration server, you must add another target and a scheme to run it. You
+can do this by:
 
-* Select the root-level icon (blueprint) in the Project navigator
-* Under the `Targets` section, remove the old testing target
-* Click the `Add Target` button
-* Select the `Cocoa Touch Unit Testing Bundle` from the `Other` category under the `iOS` section
-* Click `Next`
-* Enter a product name and click `Finish`
+* Selecting the root-level icon (blueprint) in the Project navigator
+* Clicking the `Add Target` button under the `Targets` section
+* Selecting the `Cocoa Touch Unit Testing Bundle` from the `Other` category under the `iOS` section
+* Clicking `Next`
+* Entering a product name and clicking `Finish`
+
+Once the target is created, you must adjust the following build setting:
+
+* Remove any values for `Test Host` under the `Unit Testing` section
+
+If you have included OCMock, you must also modify the following build settings:
+
+* Set `Header Search Paths` to `Libraries/OCMock`
+* Set `Other Linker Flags` to `-ObjC -force_load ${BUILT_PRODUCTS_DIR}/libOCMock.a`
+
+Note that this assumes that you have 
 
 After adding the target, you must now add a scheme that will run it:
 
@@ -39,13 +54,24 @@ each test class is a member of the `Car Lot Tests` target by checking its associ
 
 ### Running the Tests from Xcode
 
-Once that is done, you can run the tests by dropping down the play button down and clicking `Test`
+Once that is done, you can run the tests by dropping down the play button down and clicking `Test`.
 
 ### Running from the Console
 
 You can also invoke the tests from the command line with the following: 
 
     xcodebuild -scheme "Car Lot Tests" -sdk iphonesimulator4.3 -configuration Debug clean build
+
+
+### Running the Tests from Jenkins
+
+You can invoke the tests from Jenkins with the follwing shell command:
+
+    xcodebuild -scheme "Car Lot Tests" -sdk iphonesimulator4.3 -configuration Debug clean build | \
+        ${WORKSPACE}/Tools/OCUnit2Junit/ocunit2junit.rb
+
+In order to aggregate the test results in a way that is presentable through Jenkins, you will also
+have to check the `Publish JUnit test results` checkbox under the `Post-build Actions`.
 
 ## Sources
 

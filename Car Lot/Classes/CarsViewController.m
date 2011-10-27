@@ -9,6 +9,12 @@
 @synthesize cars      = _cars;
 
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    return securityProxy;
+}
+
 #pragma mark -
 #pragma mark LoginViewController
 

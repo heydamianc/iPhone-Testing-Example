@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface Salesman : NSObject
+@interface User : NSObject
 
 @property(nonatomic, retain) NSNumber *employeeID;
 @property(nonatomic, retain) NSString *firstName;
